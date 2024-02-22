@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+:root{
+
+--ModerateCyan: hsl(176, 50%, 47%);
+--Darkcyan: hsl(176, 72%, 28%);
+--Black: hsl(0, 0%, 0%);
+--DarkGray: hsl(0, 0%, 48%);
+font-family: "commissioner", sans-serif;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eef;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    
+  
+}   
+.img{
+    width: 1000px;
+}
+header{
+    color:#fff;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    
+    
+}
+header h3{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    padding: 100px;
+}
+header .enlaces{
+    padding: 150px 80px;
+   
+}
+.enlaces a{
+    text-decoration: none;
+    padding: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px;
+    background-color: #fff;
+    border-radius: 15px ;
+    transform: translateY(-150px);
+    
+}
+
+.section-1 img{
+    transform: translateY(-100px);
+    width: 100px;
+
+}
+ h1,h3{
+    font-size: 60px;
+    padding: 0px 40px;
+    padding-bottom: 25px;
+}
+.section-1 p{
+    font-size: 35px;
+    color: var(--DarkGray);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 40px;
+    
+}
+.buttons button{
+    cursor: pointer;
+    padding: 35px 50px;
+    margin-top: 90px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight:600;
+    background-color: var(--ModerateCyan);    
+}
+.btn-project:hover{
+    background-color: var(--Darkcyan);
+}
+.section-2{
+    display:flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 50px 150px;
+    border-radius: 15px;
+}
+.section-2 h3{
+    display: flex;
+    border: 1px solid red;
+}
+.section-2 p{
+    font-size: 25px;
+    color: var(--DarkGray);
+}
+.section-2 input{
+    width: 100%;
+}
