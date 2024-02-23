@@ -115,19 +115,21 @@ header .enlaces{
 }
 .section-2{
     display:flex;
-    justify-content: flex-start;
     background-color: #fff;
-    padding: 50px 150px;
+    padding: 100px 350px;
     border-radius: 15px;
+    transform: translateY(-80px);
+    
 }
 .section-2 h3{
-    display: flex;
-    border: 1px solid red;
+    transform: translateX(-50px);
+    
 }
 .section-2 p{
     font-size: 25px;
     color: var(--DarkGray);
 }
-.section-2 input{
+.section-2 .range{
     width: 100%;
+    margin-top: 50px;
 }

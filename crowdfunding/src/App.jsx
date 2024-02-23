@@ -30,7 +30,7 @@ function App() {
       <div>
         <h3> $89,914</h3>
         <p>of $100,000 backed</p>
-        <input type="range"></input>
+        <input className='range' type="range"></input>
       </div>
       <div>
         <h3>5,007</h3>
