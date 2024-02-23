@@ -31,7 +31,8 @@ body{
 .img-container{
     display: flex;
     width: 100vw;
-    height: 60vh;  
+    height: 60vh;
+   
 }   
 .img{
     width: 100%;
@@ -50,14 +51,15 @@ header h3{
     padding-left: 150px;   
 }
 header .enlaces{
-    padding: 30px 150px;   
+    padding: 0px 220px;   
 }
 .enlaces a{
     text-decoration: none;
-    padding: 40px;
+    padding-right: 40px;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+   
 }
 .section-1{
     position: absolute;
