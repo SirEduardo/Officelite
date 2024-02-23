@@ -15,53 +15,52 @@ font-family: "commissioner", sans-serif;
     padding: 0;
 }
 body{
-   display: flex;
-   flex-direction: column;
-   height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #eef;
+    background-color: rgb(247, 247, 247);
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+  
 }
 
 .img-container{
     display: flex;
-    justify-content: center;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
+    
     
   
 }   
 .img{
-    width: 1000px;
+    width: 100%;
 }
 header{
     color:#fff;
     position: absolute;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 75%;
+    width: 100%;
+    padding: 80px  ;
+   
     
     
 }
 header h3{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 50px;
-    padding: 100px;
+    font-size: 36px;
+    padding-left: 150px;
+   
 }
 header .enlaces{
-    padding: 150px 80px;
+    padding: 30px 150px;
    
 }
 .enlaces a{
     text-decoration: none;
     padding: 40px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     color: #fff;
 }
@@ -69,44 +68,51 @@ header .enlaces{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 150px;
     background-color: #fff;
-    border-radius: 15px ;
-    transform: translateY(-150px);
-    
+    border-radius: 10px ;
+    max-width: fit-content;
+    min-width: 900px;
+    margin-inline: auto;
+    padding: 0px 60px;
+    border: 1px solid rgb(226, 226, 226);
+    transform: translateY(-100px);
+     
+      
 }
 
 .section-1 img{
-    transform: translateY(-100px);
-    width: 100px;
+    transform: translateY(-35px);
+    width: 70px;
 
 }
  h1,h3{
-    font-size: 60px;
-    padding: 0px 40px;
-    padding-bottom: 25px;
+    font-size: 36px;
+    
+   
 }
 .section-1 p{
-    font-size: 35px;
+    padding-top: 20px;
+    font-size: 22px;
     color: var(--DarkGray);
 }
 .buttons{
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
-    padding: 15px;
-    padding-bottom: 40px;
+    width: 100%;
+    padding: 20px 0px;
+    padding-bottom: 60px;
     
+   
 }
 .buttons button{
     cursor: pointer;
-    padding: 35px 50px;
-    margin-top: 90px;
+    padding: 20px 40px;
+    margin-top: 40px;
     border-radius: 50px;
     border: none;
     color: #fff;
-    font-size: 30px;
+    font-size: 18px;
     font-weight:600;
     background-color: var(--ModerateCyan);    
 }
@@ -115,21 +121,99 @@ header .enlaces{
 }
 .section-2{
     display:flex;
+    align-items: center;
     background-color: #fff;
-    padding: 100px 350px;
-    border-radius: 15px;
-    transform: translateY(-80px);
+    min-width: 900px;
+    padding: 60px 60px;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin-inline: auto;
+    border: 1px solid rgb(226, 226, 226);
+   
+    
     
 }
 .section-2 h3{
-    transform: translateX(-50px);
+    font-size: 44px;
+    padding-left: 80px;
+    width: 100%;
+  
+    
     
 }
 .section-2 p{
-    font-size: 25px;
+    padding-left: 80px;
+    font-size: 20px;
     color: var(--DarkGray);
 }
 .section-2 .range{
     width: 100%;
     margin-top: 50px;
+    border: 1px solid black;
+}
+.section-3{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 30px;
+    max-width: 900px;
+    padding: 40px 60px;
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    
+}
+.section-3 h3{
+    font-size: 26px;
+    padding-bottom: 30px;
+}
+.section-3 p{
+    font-size: 20px;
+    color: var(--DarkGray);
+}
+.bamboo-container{
+    margin-top: 40px;
+    padding: 40px 30px;
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 10px;
+}
+.bamboo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bamboo span{
+    color: var(--ModerateCyan);
+    font-weight: 600;
+}
+.bamboo-container .button{
+    display: flex;
+    justify-content: space-between;
+}
+.bamboo-container button{
+    cursor: pointer;
+    padding: 18px 35px;
+    margin-top: 40px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight:600;
+    background-color: var(--ModerateCyan); 
+}
+.bamboo-container button:hover{
+    background-color: var(--Darkcyan);
+}
+.bamboo-container .button div{
+    display:flex;
+    align-items: flex-end;
+  
+   
+    
+}
+.bamboo-container .button div h3{
+    margin-right: 10px;
+    font-size: 34px;
+   
+    
 }
