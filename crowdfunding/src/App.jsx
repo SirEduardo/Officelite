@@ -43,7 +43,7 @@ function App() {
       </section>
       <section className='section-3'>
         <h3>About this Project</h3>
-        <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand. Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+        <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.<br/><br/> Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
         <div className='bamboo-container'>
           <div className='bamboo'>
             <h3>Bamboo Stand</h3>
@@ -54,7 +54,8 @@ function App() {
           </div>
           <div className='button'>
             <div>
-              <h3>101</h3><p>left</p>
+              <h3>101</h3>
+              <p>left</p>
             </div>
             <button>Select Reward</button>
           </div>
