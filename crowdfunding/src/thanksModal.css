@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+:root{
+
+--ModerateCyan: hsl(176, 50%, 47%);
+--Darkcyan: hsl(176, 72%, 28%);
+--Black: hsl(0, 0%, 0%);
+--DarkGray: hsl(0, 0%, 48%);
+font-family: "commissioner", sans-serif;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.thanks-container {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+  }
+  
+  .thanks-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fefefe;
+    margin:15% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 20%;
+    border-radius: 10px;
+    gap: 30px;
+    
+  
+  }
+  .thanks-modal img{
+    width: 60px;
+  }
+  .thanks-modal div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+  .thanks-modal span{
+    color: #000;
+    font-weight: 700;
+  }

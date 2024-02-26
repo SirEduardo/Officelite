@@ -4,6 +4,7 @@ import './app.css';
 import { Info } from './Info.jsx';
 import './modal.css'
 import { Modal } from './modal.jsx';
+import './thanksModal.css'
 
 function App() {
 
@@ -56,7 +57,7 @@ function App() {
     <Info/>
     {showModal &&
       <Modal closeModal={closeModal}/>}
- 
+  
 
     </div>
     
