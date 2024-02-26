@@ -14,3 +14,117 @@ font-family: "commissioner", sans-serif;
     margin: 0;
     padding: 0;
 }
+.modal-container {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fefefe;
+    margin:4% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 35%;
+    border-radius: 10px;
+  }
+  .modal-header{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+  
+  }
+  .modal-header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+   
+  }
+  .modal-header h2{
+    color: #000;
+  }
+ 
+h4{
+  color: var(--ModerateCyan);
+  margin-left: -160px;
+}
+
+.input{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.input label:hover{
+  cursor: pointer;
+  color: var(--ModerateCyan);
+}
+label{
+  padding-right: 1.25em;
+}
+.no-reward{
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(226, 226, 226);
+}
+.grey{
+  color: var(--DarkGray);
+  opacity: 0.7;
+  font-weight: 400;
+}
+.text{
+  color: var(--DarkGray);
+  padding-top: 10px;
+}
+.modal .standard{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.modal-black-edition{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(226, 226, 226);
+}
+.modal-special-edition{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(226, 226, 226);
+  opacity: .3;
+}
+
+
+.close-modal {
+  display: flex;
+  justify-content: flex-end;
+  color: #aaa;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  border: none;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
