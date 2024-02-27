@@ -1,25 +1,24 @@
 import { useState } from "react"
-import { ThanksModal } from "./thanksModal"
+import { ThanksModal } from "../thanksModal"
 
 
-export function Dropdown({closeModal}){
+export function DropdownBlackEdition(closeModal){
     const [active,setActive] = useState(false)
     
 
-    const handleButton = () =>{
-    
-        setActive(true); 
+    const handleBotton = () =>{
+        setActive(true)
+        closeModal()
     }
     const closeModalThank = () =>{
-        setActive(false);
-      
+        setActive(false)
     }
 
     return(
         <div className='dropdown'>
             <h5>Enter your pledge</h5>
-            <input type='number' required placeholder='$ 0'></input>
-            <button onClick={handleButton}>Continue</button>
+            <input type='number' min={75} max={200} placeholder='$ 0'></input>
+            <button onClick={handleBotton}>Continue</button>
             {active &&
                 <ThanksModal closeModalThank ={closeModalThank}/>
             }

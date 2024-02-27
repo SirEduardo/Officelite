@@ -12,17 +12,26 @@ function App() {
 
   const [showModal,setShowModal] = useState(false);
   const[showThanksModal,setShowThanksModal] = useState(false)
- 
+  const[marked,setMarked] = useState(false)
+  
+  const markClassName = marked? "setbookmark" : "bookmark"
+  
+  const text = marked ? 'Bookmarked' : 'Bookmark'
+  
+  const handleClick = () =>{
+    setMarked(!marked)
+  }
+
   const openModal = () => {
     setShowModal(true);
+   
   };
-  
-  const closeModal = () =>{
+
+   const closeModal = () =>{
     setShowModal(false);
+ 
     
   };
-
-
   const closeModalThank = () =>{
     setShowThanksModal(false)
   }
@@ -47,7 +56,7 @@ function App() {
         <div className='buttons'>
           <button className='btn-project' 
           onClick={openModal}>Back this project</button>
-          <button>bookmark</button>
+          <button  className={markClassName} onClick={handleClick}>{text}</button>
         </div>
       </section>
       <section className='section-2'>
@@ -65,7 +74,7 @@ function App() {
       </div>
      
       </section>
-    <Info/>
+    <Info openModal={openModal}/>
     {showModal &&
       <Modal closeModal={closeModal}/>}
     {showModal && <Dropdown closeModal={closeModal}/>}

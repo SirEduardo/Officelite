@@ -1,4 +1,6 @@
-export function Info(){
+
+
+export function Info({openModal}){
     return(
         <section className='section-3'>
         <h3>About this Project</h3>
@@ -16,7 +18,7 @@ export function Info(){
               <h3>101</h3>
               <p>left</p>
             </div>
-            <button>Select Reward</button>
+            <button onClick={openModal}>Select Reward</button>
           </div>
         </div>
         <div className='black-edition-container'>
@@ -32,7 +34,8 @@ export function Info(){
           <h3>64</h3>
           <p>left</p>
         </div>
-        <button>Select Reward</button>
+        <button onClick={openModal}>Select Reward</button>
+        
       </div>
         </div>
         <div className='special-container'>
@@ -48,7 +51,7 @@ export function Info(){
           <h3>0</h3>
           <p>left</p>
         </div>
-        <button>Out of stock</button>
+        <button disabled >Out of stock</button>
       </div>
         </div>
         </section>
