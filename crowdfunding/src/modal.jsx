@@ -7,15 +7,16 @@ import './thanksModal.css'
 
 export function Modal({closeModal}){
 
-    const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOption, setSelectedOption] = useState(false);
 
     const handleChange = (event) => {
-      setSelectedOption(event.target.value);
+      setSelectedOption(event.target.value); 
     };
 
     const [isOpen,setIsOpen] = useState(false);
 
     const toggleDropdown = () =>{
+        setSelectedOption(!selectedOption)
         setIsOpen(!isOpen)
     }
 
@@ -48,7 +49,7 @@ export function Modal({closeModal}){
             </div>
             <div className="text">
                 <p>You get an ergonomic stand made of natural bamboo. You’ve helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
-                {isOpen &&(
+                {isOpen &&( 
                 <Dropdown closeModal = {closeModal}/>
                 )}
             </div>
@@ -68,18 +69,15 @@ export function Modal({closeModal}){
         </div>
         <div className="modal-special-edition">
             <div className='input'>
-                <label><input type="radio" value='specialEdition' checked = {selectedOption === 'specialEdition'} onChange={handleChange} onClick={toggleDropdown} />Mahogany Special Edition</label>
+                <label><input type="radio" value='specialEdition' checked = {selectedOption === 'specialEdition'} onChange={handleChange} />Mahogany Special Edition</label>
                 <h4>Pledge $200 or more</h4>
                 <p>0 <span className="grey">left</span></p>
             </div>
             <div className="text">
                 <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
-                {isOpen &&(
-                    <Dropdown/>
-                    )}
+            
             </div>
         </div>
-        <div className='overlay' onClick={closeModal}></div>
         </div>
     </div>
     )

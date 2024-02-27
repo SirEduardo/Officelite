@@ -5,16 +5,27 @@ import { Info } from './Info.jsx';
 import './modal.css'
 import { Modal } from './modal.jsx';
 import './thanksModal.css'
+import { Dropdown } from './dropdown.jsx';
+import { ThanksModal } from './thanksModal.jsx';
 
 function App() {
 
   const [showModal,setShowModal] = useState(false);
+  const[showThanksModal,setShowThanksModal] = useState(false)
+ 
   const openModal = () => {
     setShowModal(true);
   };
+  
   const closeModal = () =>{
     setShowModal(false);
+    
   };
+
+
+  const closeModalThank = () =>{
+    setShowThanksModal(false)
+  }
 
   return (
     <div className='container'>    
@@ -27,10 +38,10 @@ function App() {
             <a href='#'>Get Started</a>
           </div>
         </header>
-      <img src='../images/image-hero-desktop.jpg'></img>
+      <img src='../images/image-hero-desktop.jpg' alt='Hero image'></img>
     </div>
       <section className='section-1'>
-        <img src='../images/logo-mastercraft.svg'></img>
+        <img src='../images/logo-mastercraft.svg' alt='Mastercraft logo'></img>
         <h1>Mastercraft Bamboo Monitor Riser</h1>
         <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div className='buttons'>
@@ -57,7 +68,8 @@ function App() {
     <Info/>
     {showModal &&
       <Modal closeModal={closeModal}/>}
-  
+    {showModal && <Dropdown closeModal={closeModal}/>}
+    {showThanksModal && <ThanksModal closeModalThank={closeModalThank} />}
 
     </div>
     
