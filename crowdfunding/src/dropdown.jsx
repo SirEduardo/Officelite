@@ -10,11 +10,15 @@ export function Dropdown({ minValue, closeModal }) {
 
   const handleInputChange = (event) => {
     const { value } = event.target;
+    if (!isNaN(value) || value ==="") {
     setPledgeValue(value);
     if (value < minValue) {
       setError(`Please enter a pledge of at least $${minValue}.`);
     } else {
       setError("");
+    }
+    }else{
+        setError("Please enter a valid number.")
     }
   };
 
@@ -25,12 +29,14 @@ export function Dropdown({ minValue, closeModal }) {
         setShowThanksModal(true);
         setProcessing(false);
         setPledgeValue("");
+        closeModal()
       }, 500);
     }
   };
 
   const closeModalThank = () => {
     setShowThanksModal(false);
+    closeModal()
   };
 
   const isValidPledge = parseFloat(pledgeValue) >= minValue;
