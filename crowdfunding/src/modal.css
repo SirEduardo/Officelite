@@ -153,6 +153,9 @@ input[type=number] { -moz-appearance:textfield; }
   cursor: pointer;
   background: var(--Darkcyan);
 }
+.error{
+  color:rgb(250, 47, 47)
+}
 .close-modal {
   color: #aaa;
   font-size: 16px;

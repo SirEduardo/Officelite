@@ -1,3 +1,4 @@
+/*eslint-disable react/prop-types*/
 import './thanksModal.css'
 
 export function ThanksModal({closeModalThank}){

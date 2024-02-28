@@ -1,4 +1,4 @@
-
+/*eslint-disable react/prop-types*/
 import { useState } from 'react'
 import './modal.css'
 import { Dropdown} from './dropdown';
@@ -47,7 +47,7 @@ export function Modal({closeModal}){
             <div className="text">
                 <p>You get an ergonomic stand made of natural bamboo. You’ve helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
                 {selectedOption === 'standard' &&
-                <Dropdown closeModal = {closeModal}/>
+                <Dropdown minValue={25}/>
                 }
             </div>
         </div>
@@ -60,7 +60,7 @@ export function Modal({closeModal}){
             <div className="text">
                 <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
                 {selectedOption === 'blackEdition' &&
-                    <Dropdown closeModal = {closeModal}/>
+                    <Dropdown minValue={75}/>
                     }
                 </div>
         </div>
