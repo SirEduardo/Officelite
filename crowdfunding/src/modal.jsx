@@ -9,16 +9,21 @@ export function Modal({closeModal}){
 
     const [selectedOption, setSelectedOption] = useState(false);
    
+   
     
     const handleChange = (event) => {
-      setSelectedOption(event.target.value); 
+      setSelectedOption(event.target.value);
+
     };
 
- 
+    const toogleDropdown = () =>{
+        setSelectedOption(true)
+        
+    }
 
 
     return(
-        <div className="modal-container">
+        <div className='modal-container'>
         <div className='modal'>
         <header className='modal-header'>
             <nav>
@@ -29,18 +34,18 @@ export function Modal({closeModal}){
                 <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
             </div>
         </header>
-        <div className="no-reward">
+        <div className='no-reward'>
             <div className='input'>
-                <label><input type="radio" value='noReward' checked = {selectedOption === 'noReward'} onChange={handleChange}  />Pledge with no reward</label>
+                <label><input type="radio" value='noReward' checked = {selectedOption === 'noReward'} onChange={handleChange} onClick={toogleDropdown} />Pledge with no reward</label>
                 </div>   
             <div className="text">
             
                 <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p> 
             </div>
         </div>
-        <div className="modal-standard">
+        <div className='modal-standard' >
             <div className='input'>
-                <label><input type="radio" value='standard' checked = {selectedOption === 'standard'} onChange={handleChange}  />Bamboo Stand</label>
+                <label><input type="radio" value='standard' checked = {selectedOption === 'standard'} onChange={handleChange} onClick={toogleDropdown} />Bamboo Stand</label>
                 <h4>Pledge $25 or more</h4>
                 <p>101 <span className="grey">left</span></p>
             </div>
@@ -51,9 +56,9 @@ export function Modal({closeModal}){
                 }
             </div>
         </div>
-        <div className="modal-black-edition">
+        <div className='modal-black-edition'>
         <div className='input'>
-            <label><input type="radio" value='blackEdition' checked = {selectedOption === 'blackEdition'} onChange={handleChange}  />Black Edition Stand</label>
+            <label><input type="radio" value='blackEdition' checked = {selectedOption === 'blackEdition'} onChange={handleChange} onClick={toogleDropdown} />Black Edition Stand</label>
             <h4>Pledge $75 or more</h4>
             <p>64 <span className="grey">left</span></p>
             </div>

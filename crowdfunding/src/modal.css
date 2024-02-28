@@ -100,12 +100,16 @@ label{
   border: 1px solid rgb(226, 226, 226);
 }
 
+
 .modal-black-edition{
   display: flex;
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
   border: 1px solid rgb(226, 226, 226);
+}
+.dropdown-black{
+  border: 2px solid var(--ModerateCyan);
 }
 .modal-special-edition{
   display: flex;
@@ -124,8 +128,10 @@ input[type=number] { -moz-appearance:textfield; }
 .dropdown{
   display: flex;
   justify-content: space-between;
-  border-top: 1px var(--DarkGray);
-  padding-top: 40px 
+
+  padding-top: 20px;
+  margin-top: 25px;
+  border-top: 1px solid rgb(226, 226, 226) ; 
 }
 .dropdown input{
   text-align: center;

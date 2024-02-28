@@ -33,8 +33,11 @@ function App() {
     
   };
   const closeModalThank = () =>{
-    setShowThanksModal(false)
-  }
+    setShowModal(false)
+    setShowThanksModal(false);
+
+  };
+
 
   return (
     <div className='container'>    
@@ -78,7 +81,7 @@ function App() {
     {showModal &&
       <Modal closeModal={closeModal}/>}
     {showModal && <Dropdown closeModal={closeModal}/>}
-    {showThanksModal && <ThanksModal closeModalThank={closeModalThank} />}
+    {showThanksModal && <ThanksModal closeModalThank={closeModalThank}/>}
 
     </div>
     

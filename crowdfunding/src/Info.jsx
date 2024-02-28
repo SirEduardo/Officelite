@@ -1,6 +1,9 @@
 /*eslint-disable react/prop-types*/
 
 export function Info({openModal}){
+
+
+  
     return(
         <section className='section-3'>
         <h3>About this Project</h3>

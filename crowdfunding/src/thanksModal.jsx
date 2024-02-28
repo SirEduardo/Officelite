@@ -2,6 +2,11 @@
 import './thanksModal.css'
 
 export function ThanksModal({closeModalThank}){
+
+    const handleGotIt = () =>{
+        closeModalThank();
+        
+    };
     
     return(
         <div className='thanks-container'>
@@ -10,10 +15,10 @@ export function ThanksModal({closeModalThank}){
                 <div>
                     <span>Thanks for your support!</span>
                     <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaing is completed</p>
-                    <button onClick={closeModalThank}>Got it!</button>
+                    <button onClick={handleGotIt}>Got it!</button>
                 </div>
             </div>
      
         </div>
-    )
+    );
 }
